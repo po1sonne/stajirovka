@@ -1,18 +1,60 @@
-body {
+* {
+    margin: 0 auto;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: bisque;
-    display: flex;
+}
+/* базовый сброс браузерных стилей */
+
+body {
+    background-image: linear-gradient(-30deg, hsl(96, 11%, 91%), hsl(53, 56%, 80%))
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex; /* применяется только контейнеру */
+    border-style: solid;
+    align-items: center;
+    justify-content: space-evenly; /* применяется только контейнеру */
+    flex-wrap: wrap;
     flex-direction: column;
 }
-    
 
-.main_container {
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    background-color: aqua;
-    height: 6em;
-    width: 20em;
+.item {
+    margin-top: 10%;
+    font-size: 13vh;
+    color: hsla(204, 29%, 17%, 0.884);
+    border-radius: 10px; 
+    background-color: hsla(180, 17%, 92%, 0.63);
+    box-shadow: 5px 5px 10px 0 hsla(16, 12%, 76%, 0.651);
+}
+.smile {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 40vw;
+    height: 40vh;
+    z-index: -1;
+}
+
+.btn {
+    margin-top: 10%;
+    font-size: 3vh;
+    color: hsla(204, 29%, 17%, 0.884);
+    background-color: hsla(207, 62%, 72%, 0.89);
+    box-shadow: 5px 5px 10px 0 hsla(16, 12%, 76%, 0.651);
+    border-radius: 10px; 
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.btn:hover {
+    background-color: hsla(175, 62%, 72%, 0.89);
+    transition: background-color 0.9s linear;
 }
