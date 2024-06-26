@@ -9,28 +9,27 @@
 }
 /* базовый сброс браузерных стилей */
 
-body {
-    background-image: linear-gradient(-30deg, hsl(96, 11%, 91%), hsl(53, 56%, 80%))
-}
-
 .container {
     height: 100vh;
     width: 100vw;
     display: flex; /* применяется только контейнеру */
-    border-style: solid;
     align-items: center;
     justify-content: space-evenly; /* применяется только контейнеру */
     flex-wrap: wrap;
     flex-direction: column;
+    background-image: linear-gradient(-30deg, hsl(96, 11%, 91%), hsl(53, 56%, 80%))
 }
 
 .item {
     margin-top: 10%;
-    font-size: 13vh;
+    font-size: 11vh;
     color: hsla(204, 29%, 17%, 0.884);
     border-radius: 10px; 
     background-color: hsla(180, 17%, 92%, 0.63);
     box-shadow: 5px 5px 10px 0 hsla(16, 12%, 76%, 0.651);
+    z-index: 1;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 .smile {
     position: absolute;
@@ -38,7 +37,6 @@ body {
     top: 10%;
     width: 40vw;
     height: 40vh;
-    z-index: -1;
 }
 
 .btn {
